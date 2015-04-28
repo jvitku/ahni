@@ -1,3 +1,15 @@
+# AHNI for Hybrid Artificial Neural Network Systems
+
+Author of modification: Pavol Sekereš
+
+Modification of the [AHNI - Another HyperNEAT Implementation](https://github.com/OliverColeman/ahni) by Oliver Coleman.
+
+This has a purpose of designing Hybrid Artificial Neural Network Systems (HANNS) in the simulator [NengoROS](http://nengoros.wordpress.com).
+
+
+The rest of original README follows:
+
+
 # AHNI - Another HyperNEAT Implementation
 
 AHNI implements the HyperNEAT neuroevolution algorithm, see http://eplex.cs.ucf.edu/hyperNEATpage/HyperNEAT.html.
