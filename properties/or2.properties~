@@ -8,7 +8,7 @@ substitution.enable=true
 ###########
 # evolution
 ###########
-num.runs=35
+num.runs=25
 num.generations=100
 popul.size=100
 
