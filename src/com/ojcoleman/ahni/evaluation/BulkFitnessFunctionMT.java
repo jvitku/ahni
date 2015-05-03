@@ -26,6 +26,8 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.apache.log4j.Logger;
 import org.jgapcustomised.Chromosome;
 
+import ca.nengo.model.StructuralException;
+
 import com.anji.integration.Activator;
 import com.anji.integration.ActivatorTranscriber;
 import com.anji.integration.Transcriber;
@@ -41,6 +43,9 @@ import com.ojcoleman.ahni.util.ArrayUtil;
 import com.ojcoleman.ahni.util.CircularFifoBuffer;
 import com.ojcoleman.ahni.util.Parallel;
 import com.ojcoleman.ahni.util.Parallel.Operation;
+
+import ctu.nengoros.comm.rosutils.RosUtils;
+import design.models.QLambdaTestSim;
 
 /**
  * <p>
@@ -66,6 +71,7 @@ import com.ojcoleman.ahni.util.Parallel.Operation;
  * @author Oliver Coleman
  */
 public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implements Configurable {
+	private static final boolean isHANNS = true;
 	private static final long serialVersionUID = 1L;
 	static Logger logger = Logger.getLogger(BulkFitnessFunctionMT.class);
 	private static NumberFormat nf2 = new DecimalFormat("0.00");
@@ -235,10 +241,19 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		
 		EvaluatorGroup eg = new EvaluatorGroup(this.getClass().getSimpleName() + " evaluators");
 		logger.info("Using " + numThreads + " threads for transcription and evaluation.");
-		evaluators = new Evaluator[numThreads];
-		for (int i = 0; i < numThreads; i++) {
-			evaluators[i] = new Evaluator(i, eg);
-			evaluators[i].start();
+		if(isHANNS){
+			evaluators = new EvaluatorHANNS[numThreads];
+			for (int i = 0; i < numThreads; i++) {
+				evaluators[i] = new EvaluatorHANNS(i, eg);
+				evaluators[i].start();
+			}
+		}
+		else{
+			evaluators = new Evaluator[numThreads];
+			for (int i = 0; i < numThreads; i++) {
+				evaluators[i] = new Evaluator(i, eg);
+				evaluators[i].start();
+			}
 		}
 		
 		String[] minionHosts = props.getStringArrayProperty(MINION_HOSTS, null);
@@ -886,6 +901,54 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		notifyAll();
 	}
 
+	
+	
+	protected class EvaluatorHANNS extends Evaluator{
+		private QLambdaTestSim simulator;
+		private static final int SIMULATOR_STEPS = 100;
+		
+		protected EvaluatorHANNS(int id, ThreadGroup tg){
+			super(id, tg);
+			//super(id, tg);
+			initSimulator();
+		}
+
+		@Override
+		protected void dispose(){
+			simulator.cleanup();
+			super.dispose();
+		}
+		
+		protected void initSimulator(){
+			RosUtils.prefferJroscore(true);
+			RosUtils.setRqtAutorun(false);
+			
+			simulator = new QLambdaTestSim();
+			simulator.defineNetwork();
+		}
+		
+		public float evaluateGenomeInSimulator(Float[] genome){
+			simulator.reset(false);		
+
+			try {
+				simulator.getInterLayerNo(0).setVector(genome); 	// set the connection weights
+			} catch (StructuralException e) {
+				e.printStackTrace();
+				System.err.println("Connection weights not set");
+				return 0.0f;
+			}	
+			simulator.run(0, SIMULATOR_STEPS);								// run for N steps
+
+			float fitness = simulator.getFitnessVal(); 			// read fitness (from <0,1>)
+			System.out.println("Fitness read is this: "+fitness);
+			return fitness;
+			
+		}
+		
+	}
+	
+	
+	
 	protected class Evaluator extends Thread {
 		private volatile boolean go = false;
 		private volatile boolean finish = false;

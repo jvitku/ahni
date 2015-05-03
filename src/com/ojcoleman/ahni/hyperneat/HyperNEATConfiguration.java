@@ -110,7 +110,7 @@ public class HyperNEATConfiguration extends NeatConfiguration implements Configu
 		// TODO merge this with the INITIAL_CPPN handling code, or discard INITIAL_CPPN?
 		if (props.containsKey(HyperNEATConfiguration.SEED_CHROMOSOME_KEY)) {
 			try {
-				String seedStr = IOUtils.toString(new FileInputStream(props.getProperty(SEED_CHROMOSOME_KEY)), Charset.defaultCharset());
+				String seedStr = IOUtils.toString(new FileInputStream(props.getProperty(SEED_CHROMOSOME_KEY)), Charset.defaultCharset().toString());
 				ChromosomeMaterial seedMaterial = ChromosomeMaterial.fromXML(seedStr);
 				if (seedMaterial.getMinInnovationID() < this.getIdFactory().nextNoIncrement()) {
 					throw new InvalidConfigurationException("Invalid property: " + SEED_CHROMOSOME_KEY + ". The smallest innovation ID in the seed has already been assigned.");

@@ -45,10 +45,11 @@ dependencies {
     runtime 'ctu.nengoros:simulator:0.0.10-SNAPSHOT' //works, probably
 
     // TODO realtive path to libraries of the nengo:simulator
-   	compile fileTree(dir: '../nengo/simulator/lib', include: '**/*.jar')
-	runtime fileTree(dir: '../nengo/simulator/lib', include: '**/*.jar')
-	testCompile fileTree(dir: '../nengo/simulator/lib', include: '**/*.jar')
-
+    compile fileTree(dir: '../../nengo/simulator/lib', include: '**/*.jar')
+ 	runtime fileTree(dir: '../../nengo/simulator/lib', include: '**/*.jar')
+ 	testCompile fileTree(dir: '../../nengo/simulator/lib', include: '**/*.jar')
+    
+        
 	//runtime project('ctu.hanns.environments:statesactions:0.0.5-SNAPSHOT')
     //testCompile project('ctu.hanns.environments:statesactions:0.0.5-SNAPSHOT')
 }

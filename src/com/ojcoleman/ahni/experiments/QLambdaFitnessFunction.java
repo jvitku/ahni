@@ -1,26 +1,18 @@
-package com.ojcoleman.ahni.experiments.objectrecognition;
-
-import java.awt.geom.AffineTransform;
-import java.util.HashMap;
+package com.ojcoleman.ahni.experiments;
 
 import org.apache.log4j.Logger;
-import org.jgapcustomised.*;
+import org.jgapcustomised.Chromosome;
 
-import com.anji.integration.*;
-import com.anji.nn.*;
-import com.ojcoleman.ahni.*;
+import com.anji.integration.Activator;
 import com.ojcoleman.ahni.evaluation.HyperNEATFitnessFunction;
-import com.ojcoleman.ahni.hyperneat.HyperNEATEvolver;
+import com.ojcoleman.ahni.experiments.objectrecognition.ObjectRecognitionFitnessFunction2;
 import com.ojcoleman.ahni.hyperneat.Properties;
-import com.ojcoleman.ahni.nn.GridNet;
 import com.ojcoleman.ahni.transcriber.HyperNEATTranscriber;
 
-/**
- * Corresponds to tasks 1.1 and 1.2 in Oliver J. Coleman, "Evolving Neural Networks for Visual Processing",
- * Undergraduate Honours Thesis (Bachelor of Computer Science), 2010. The number of small squares is hard coded in
- * variable numSmallSquares.
- */
-public class ObjectRecognitionFitnessFunction2 extends HyperNEATFitnessFunction {
+
+public class QLambdaFitnessFunction extends HyperNEATFitnessFunction {
+	//QLambdaEA a = new QLambdaEA();
+	
 	private static Logger logger = Logger.getLogger(ObjectRecognitionFitnessFunction2.class);
 
 	private double[][][] stimuli;
@@ -154,4 +146,5 @@ public class ObjectRecognitionFitnessFunction2 extends HyperNEATFitnessFunction 
 
 		logger.info("Scale performed: image size: " + inputWidth + "x" + inputHeight + ", large square size: " + largeSquareSize + ", conn range: " + connectionRange);
 	}
+
 }
