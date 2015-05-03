@@ -242,6 +242,10 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		EvaluatorGroup eg = new EvaluatorGroup(this.getClass().getSimpleName() + " evaluators");
 		logger.info("Using " + numThreads + " threads for transcription and evaluation.");
 		if(isHANNS){
+			RosUtils.prefferJroscore(true);
+			RosUtils.setRqtAutorun(false);
+			RosUtils.setAutorun(false);
+			RosUtils.utilsShallStart();
 			evaluators = new EvaluatorHANNS[numThreads];
 			for (int i = 0; i < numThreads; i++) {
 				evaluators[i] = new EvaluatorHANNS(i, eg);
@@ -920,8 +924,7 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		}
 		
 		protected void initSimulator(){
-			RosUtils.prefferJroscore(true);
-			RosUtils.setRqtAutorun(false);
+			
 			
 			simulator = new QLambdaTestSim();
 			simulator.defineNetwork();
