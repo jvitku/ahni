@@ -12,6 +12,7 @@ import com.ojcoleman.ahni.*;
 import com.ojcoleman.ahni.evaluation.HyperNEATFitnessFunction;
 import com.ojcoleman.ahni.hyperneat.HyperNEATEvolver;
 import com.ojcoleman.ahni.hyperneat.Properties;
+import com.ojcoleman.ahni.nn.BainNN;
 import com.ojcoleman.ahni.nn.GridNet;
 import com.ojcoleman.ahni.transcriber.HyperNEATTranscriber;
 
@@ -90,6 +91,7 @@ public class ObjectRecognitionFitnessFunction2 extends HyperNEATFitnessFunction 
 	 * subclass. This method adjusts fitness for network size, based on configuration.
 	 */
 	protected double evaluate(Chromosome genotype, Activator activator, int threadIndex) {
+		BainNN gr = (BainNN)activator;
 		double[][][] responses = activator.nextSequence(stimuli);
 		//this.evaluators[threadIndex].
 		double totalDists = 0;

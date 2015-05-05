@@ -312,7 +312,7 @@ public class Genotype implements Serializable {
 					c.setFitnessValue(fitness);
 				}
 			}
-			
+			avgPopulationFitness = getAveragePopulationFitness();
 			// Fire an event to indicate we've evaluated all chromosomes.
 			// -------------------------------------------------------
 			m_activeConfiguration.getEventManager().fireGeneticEvent(new GeneticEvent(GeneticEvent.GENOTYPE_EVALUATED_EVENT, this));
@@ -602,8 +602,15 @@ public class Genotype implements Serializable {
 		return new Genotype(props, a_activeConfiguration, chroms);
 	}
 
+	
+	private double avgPopulationFitness;
+	
+	public double getAvaragePopulationFitnessPreCalculated(){
+		return avgPopulationFitness;
+	}
+	
 	public double getAveragePopulationFitness() {
-		long fitness = 0;
+		double fitness = 0;
 		Iterator<Chromosome> iter = m_chromosomes.iterator();
 		while (iter.hasNext()) {
 			Chromosome chrom = iter.next();

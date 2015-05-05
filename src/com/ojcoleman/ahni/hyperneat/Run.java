@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 import org.apache.log4j.Logger;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.PropertyConfigurator;
-
+import org.jgapcustomised.Chromosome;
 
 import com.anji.util.Misc;
 import com.beust.jcommander.JCommander;
@@ -88,6 +88,13 @@ public class Run {
 	 */
 	public double[][] fitness;
 
+	/**
+	 * Avarage fitnesses for each generation for each run, in the format [run][generation]. This will only be populated
+	 * after {@link #run()} has completed.
+	 */
+	public double[][] avarageFitnesses;
+
+	
 	/**
 	 * @param args
 	 */
@@ -190,7 +197,8 @@ public class Run {
 
 		performance = new double[numRuns][];
 		fitness = new double[numRuns][];
-
+		avarageFitnesses = new double[numRuns][];
+		
 		long start = System.currentTimeMillis();
 		double avgRunTime = 0;
 		double avgGenerations = 0;
@@ -222,14 +230,14 @@ public class Run {
 			HyperNEATEvolver evolver = (HyperNEATEvolver) runProps.singletonObjectProperty(HyperNEATEvolver.class);
 			
 			evolver.run();
-			
 			performance[run] = evolver.getBestPerformance();
+			avarageFitnesses[run] = evolver.getAvarageFitnesses();
 			fitness[run] = evolver.getBestFitness();
 			avgGenerations += evolver.getGeneration();
 			if (evolver.getGeneration() < performance[run].length) {
 				solvedCount++;
 			}
-
+			Chromosome c = evolver.bestPerforming;
 			evolver.dispose();
 
 			long duration = (System.currentTimeMillis() - startRun) / 1000;
@@ -271,6 +279,14 @@ public class Run {
 			resultFileFit.close();
 			logger.info("Wrote best fitness for each generation in each run to " + resultFitFileName);
 
+			String resultAvgFitFileName = resultFileNameBase + "-avarage-fitness.csv";
+			Results resultsFitnessAvg = new Results(avarageFitnesses, null);
+			BufferedWriter resultFileAvgFit = new BufferedWriter(new FileWriter(resultAvgFitFileName));
+			resultFileAvgFit.append(resultsFitnessAvg.toString());
+			resultFileAvgFit.close();
+			logger.info("Wrote avarage fitness for each generation in each run to " + resultAvgFitFileName);
+
+			
 			// Only do stats if there's more than one run.
 			if (numRuns > 1) {
 				String statsPerfFileName = resultFileNameBase + "-performance-stats.csv";
@@ -289,6 +305,9 @@ public class Run {
 			}
 		}
 	}
+	
+	
+	
 	
 	private void logEnv() {
 		StringBuffer out = new StringBuffer();

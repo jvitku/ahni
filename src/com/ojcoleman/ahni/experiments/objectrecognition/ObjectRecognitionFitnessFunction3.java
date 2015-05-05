@@ -350,7 +350,8 @@ public class ObjectRecognitionFitnessFunction3 extends HyperNEATFitnessFunction 
 	protected double evaluate(Chromosome genotype, Activator activator, int threadIndex) {
 		GridNet substrate = (GridNet) activator;
 		double[][][] responses = substrate.nextSequence(stimuli);
-
+		System.out.println("Sizes: "+substrate.getWeights().length+","+substrate.getWeights()[0].length+","+substrate.getWeights()[0][0].length+","
+				+substrate.getWeights()[0][0][0].length+","+substrate.getWeights()[0][0][0][0].length+","+substrate.getWeights()[0][0][0][0][0].length+",");
 		double avgDist = 0;
 		double avgInvDist = 0;
 		double percentCorrect = 0;

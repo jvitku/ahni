@@ -45,8 +45,9 @@ import com.ojcoleman.ahni.util.Parallel;
 import com.ojcoleman.ahni.util.Parallel.Operation;
 
 import ctu.nengoros.comm.rosutils.RosUtils;
-import design.models.QLambdaTestSim;
-
+import ctu.nengorosHeadless.network.connections.InterLayerWeights;
+import design.models.*;
+//import design.models.;
 /**
  * <p>
  * Provides a base for multi-threaded bulk fitness functions. Provides a multi-threaded framework for performing
@@ -162,6 +163,26 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 	protected NoveltySearch[] noveltyArchives;
 	protected boolean forcePerfFitness;
 	protected ArrayList<MinionHandler> minions = null;
+	
+	private static InterLayerWeights[] bestPerformingSubstrate;
+	private static float bestPerformingSubstratePerformance;
+	
+	public static synchronized void setBestPerformingActivator(InterLayerWeights[] a){
+		bestPerformingSubstrate = a;
+	}
+	
+	public static synchronized void setBestPerformingActivatorPerformance(float a){
+		bestPerformingSubstratePerformance = a;
+	}
+	
+	public static synchronized InterLayerWeights[] getBestPerformingActivator(){
+		return bestPerformingSubstrate;
+	}
+	
+	public static synchronized float getBestPerformingActivatorPerformance(){
+		return bestPerformingSubstratePerformance;
+	}
+
 	
 	/**
 	 * This RNG should be used by all sub-classes for all randomness.
@@ -418,6 +439,7 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 	void initialiseEvaluationOnAll() {
 		transcriber = (Transcriber) props.singletonObjectProperty(ActivatorTranscriber.TRANSCRIBER_KEY);
 		bestPerformance = targetPerformanceType == 1 ? 0 : Float.MAX_VALUE;
+		bestPerformingSubstratePerformance = 0;
 		
 		initialiseEvaluation();
 		for (BulkFitnessFunctionMT f : multiFitnessFunctions) {
@@ -562,14 +584,17 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		
 		for (Chromosome chrom : genotypes) {
 			finaliseEvaluation(chrom);
-		} 
+		}
+		
+		
+		
 		
 		lastBestChrom = newBestChrom;
 		lastBestPerformance = bestPerformance;
 
 		bestPerformances.add(bestPerformance);
 		double avgBestPerformance = ArrayUtil.average(ArrayUtils.toPrimitive(bestPerformances.toArray(new Double[0])));
-
+		
 		endRun = false;
 		// If enough generations have been finished to get an average.
 		if (bestPerformances.isFull()) {
@@ -909,7 +934,8 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 	
 	protected class EvaluatorHANNS extends Evaluator{
 		private QLambdaTestSim simulator;
-		private static final int SIMULATOR_STEPS = 100;
+		private static final int SIMULATOR_STEPS = 10000;
+		private static final int REPETITIONS = 1;
 		
 		protected EvaluatorHANNS(int id, ThreadGroup tg){
 			super(id, tg);
@@ -926,25 +952,25 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		protected void initSimulator(){
 			
 			
-			simulator = new QLambdaTestSim();
+			simulator = new QLambdaTestSimSmall();
 			simulator.defineNetwork();
 		}
 		
-		public float evaluateGenomeInSimulator(Float[] genome){
-			simulator.reset(false);		
-
-			try {
-				simulator.getInterLayerNo(0).setVector(genome); 	// set the connection weights
-			} catch (StructuralException e) {
-				e.printStackTrace();
-				System.err.println("Connection weights not set");
-				return 0.0f;
-			}	
-			simulator.run(0, SIMULATOR_STEPS);								// run for N steps
-
-			float fitness = simulator.getFitnessVal(); 			// read fitness (from <0,1>)
-			System.out.println("Fitness read is this: "+fitness);
-			return fitness;
+		public QLambdaTestSim getSimulator(){
+			return simulator;
+		}
+		
+		public float evaluateGenomeInSimulator(){
+				
+			float sum = 0;
+			for (int i = 0; i < REPETITIONS; i++) {
+				simulator.reset(false);	
+				simulator.run(0, SIMULATOR_STEPS);								// run for N steps
+				sum+=simulator.getFitnessVal(); 		
+			}
+						// read fitness (from <0,1>)
+			System.out.println("Fitness read is this: "+sum/REPETITIONS);
+			return sum/REPETITIONS;
 			
 		}
 		

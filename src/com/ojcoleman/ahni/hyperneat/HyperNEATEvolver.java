@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.text.DecimalFormat;
@@ -18,6 +19,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import javax.imageio.ImageIO;
+
 
 
 
@@ -104,6 +106,7 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 	public static final String LOG_CHAMP_TOIMAGE_KEY = "log.champ.toimage";
 	public static final String LOG_SPECIES_HISTORY_KEY = "log.species_history";
 	public static final String INITIAL_CPPN = "hyperneat.cppn.initial";
+	public static final String LOG_FILE = "/home/pavol/nengoros/ahni/activator_outputs/out2.txt";
 
 	private HyperNEATConfiguration config = null;
 	private List<AHNIEventListener> listeners = new ArrayList<AHNIEventListener>();
@@ -142,6 +145,8 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 	 * because the performance achieved can vary when the fitness function is stochastic.
 	 */
 	protected double[] bestPerformances;
+	
+	protected double[] avarageFitnesses;
 
 	/**
 	 * ctor; must call {@link #init(Properties)} before using this object. Generally the
@@ -283,6 +288,7 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 		bestPerformingChromosomes = new Chromosome[numEvolutions];
 		bestFitnesses = new double[numEvolutions];
 		bestPerformances = new double[numEvolutions];
+		avarageFitnesses = new double[numEvolutions];
 
 		// TODO loading genotype from storage is broken?
 		/*if (loadGenotypeFromDB) {
@@ -331,8 +337,10 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 		TreeMap<Long, Species> allSpeciesEver = new TreeMap<Long, Species>();
 
 		fireEvent(new AHNIEvent(AHNIEvent.Type.RUN_START, this, this));
-
+		File f = new File(LOG_FILE);
+		f.delete();
 		for (generation = 0; generation < numEvolutions && !bulkFitnessFunc.endRun(); generation++) {
+			PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(LOG_FILE, true)));
 			long start = System.currentTimeMillis();
 			
 			fireEvent(new AHNIEvent(AHNIEvent.Type.GENERATION_START, this, this));
@@ -341,13 +349,12 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 
 			// Perform one evolutionary generation: evaluate individuals, generate new population.
 			fittest = genotype.evolve();
-			
 			bestPerforming = genotype.getBestPerforming();
-
+			avarageFitnesses[generation] = genotype.getAvaragePopulationFitnessPreCalculated();
 			// result data
 			if (bulkFitnessFunc.endRun())
 				generationOfFirstSolution = generation;
-
+			
 			fittestChromosomes[generation] = fittest;
 			bestPerformingChromosomes[generation] = bestPerforming;
 			bestFitnesses[generation] = fittest.getFitnessValue();
@@ -463,6 +470,8 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 					m.append("ZPC\tZFC\tSC\tNS\tES\tSCT\tSS\tSA    \tSNBP\tGS      \tTime\tETA      \tMem");
 					
 					logger.info(m);
+					m.append("	\tAvg");
+					writer.println(m);
 					m = new StringBuilder();
 				}
 				
@@ -487,8 +496,10 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 				m.append(numSpecies + "\t" + numNewSpecies + "\t" + numExtinctSpecies + "\t" + nf1.format(speciationCompatThreshold) + "\t" + minSpeciesSize + "/" + maxSpeciesSize + "\t" + minSpeciesAge + "/" + maxSpeciesAge + "\t" + numSpeciesWithNewPerformance + "\t");
 				m.append(minSize + "/" + avgSize + "/" + maxSize + "\t");
 				m.append(nf3.format(cumulativeDurationBetweenLogging / logPerGenerations) + "\t" + Misc.formatTimeInterval(eta) + "\t" + memUsed + "MB");
-				
+				m.append(" \t"+avarageFitnesses[generation]);
 				logger.info(m);
+				writer.println(m);
+				writer.close();
 				cumulativeDurationBetweenLogging = 0;
 			}
 		}
@@ -552,6 +563,10 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 	 */
 	public double[] getBestPerformance() {
 		return bestPerformances;
+	}
+	
+	public double[] getAvarageFitnesses(){
+		return avarageFitnesses;
 	}
 
 	/**
