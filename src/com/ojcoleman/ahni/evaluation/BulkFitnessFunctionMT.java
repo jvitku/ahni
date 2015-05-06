@@ -167,6 +167,11 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 	
 	private static InterLayerWeights[] bestPerformingSubstrate;
 	private static float bestPerformingSubstratePerformance;
+	private static String bestPerformingSpecie;
+	
+	public static synchronized void setBestPerformingSpecie(long specie, long age, int size){
+		bestPerformingSpecie = "Specie ID:"+specie+", Age :"+age+", Size :"+size;
+	}
 	
 	public static synchronized void setBestPerformingActivator(InterLayerWeights[] a){
 		bestPerformingSubstrate = a;
@@ -182,6 +187,10 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 	
 	public static synchronized float getBestPerformingActivatorPerformance(){
 		return bestPerformingSubstratePerformance;
+	}
+	
+	public static synchronized String getBestPerformingSpecie(){
+		return bestPerformingSpecie;
 	}
 
 	

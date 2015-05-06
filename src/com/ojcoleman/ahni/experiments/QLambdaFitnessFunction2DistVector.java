@@ -64,7 +64,6 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 		EvaluatorHANNS evaluator = (EvaluatorHANNS)this.evaluators[threadIndex];
 //		evaluator.getSimulator().
 //		evaluator.evaluateGenomeInSimulator();
-		
 		ArrayList<IOGroup> inputs = evaluator.getSimulator().getInterLayerNo(0).getInputs();
 		ArrayList<IOGroup> outputs = evaluator.getSimulator().getInterLayerNo(0).getOutputs();
 		for (int i = 0; i < inputs.size(); i++) {
@@ -99,11 +98,15 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 		}
 		double fitnessVal = evaluator.evaluateGenomeInSimulator();
 		genotype.setPerformanceValue(fitnessVal);
+		genotype.setFitnessValue(fitnessVal);
 		if(BulkFitnessFunctionMT.getBestPerformingActivatorPerformance() < fitnessVal){
 			InterLayerWeights[] weights = new InterLayerWeights[1];
 			weights[0] = evaluator.getSimulator().getInterLayerNo(0);
 			BulkFitnessFunctionMT.setBestPerformingActivator(weights);
 			BulkFitnessFunctionMT.setBestPerformingActivatorPerformance((float)fitnessVal);
+			if(genotype.getSpecie() != null){
+				BulkFitnessFunctionMT.setBestPerformingSpecie(genotype.getSpecie().getID(), genotype.getSpecie().getAge(), genotype.getSpecie().size());
+			}
 		}
 		return fitnessVal;
 	}
@@ -122,6 +125,7 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 			ArrayList<IOGroup> inputs = weights.getInputs();
 			ArrayList<IOGroup> outputs = weights.getOutputs();
 			writer.println("Best performing HANNS weights with performance"+perf+":");
+			writer.println(BulkFitnessFunctionMT.getBestPerformingSpecie());
 			for (int i = 0; i < inputs.size(); i++) {
 				for (int j = 0; j < outputs.size(); j++) {
 					writer.println("Weights between input group "+i+" and output group "+j+" :");
