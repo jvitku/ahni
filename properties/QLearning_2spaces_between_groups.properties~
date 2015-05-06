@@ -6,10 +6,10 @@ run.reset=true
 # evolution
 ###########
 num.runs=1
-num.generations=100
-popul.size=20
+num.generations=200
+popul.size=300
 
-performance.target=0.97
+performance.target=0.95
 performance.target.type=higher
 # If greater than 1 then use an average of the best performance over this many generations.
 performance.target.average=5
@@ -40,7 +40,7 @@ weight.mutation.std.dev=1.0
 #percent of individuals used as parents
 survival.rate=0.3
 #proportion of sexual (crossover) versus asexual reproduction
-crossover.proportion=0.8
+crossover.proportion=0.5
 
 #[1, 5]
 selector.elitism.min.specie.size=1
@@ -65,8 +65,8 @@ chrom.compat.disjoint.coeff=1.0
 chrom.compat.common.coeff=0.2
 
 #compatability threshold [0.1, 4.0], relative to c#
-speciation.threshold=5000.0
-speciation.target=5
+speciation.threshold=4.0
+speciation.target=15
 
 
 ##################
@@ -80,7 +80,7 @@ fitness.max_threads=2
 #if scale.factor > 1 then the substrate height, width and connection.range 
 #will be multiplied by scale.factor every time scale.fitness is reached, at 
 #most scale.times times. If the 
-fitness.hyperneat.scale.factor=2
+fitness.hyperneat.scale.factor=0
 fitness.hyperneat.scale.times=0
 fitness.hyperneat.scale.performance=0.95
 fitness.hyperneat.scale.recordintermediateperformance=true

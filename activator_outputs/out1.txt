@@ -1,34 +1,4 @@
-Best performing HANNS weights with performance0.23618639:
-Weights between input group 0 and output group 0 :
-Weight between 0 , 0 = 0.0
-Weight between 1 , 0 = 0.2059757
--------------------------------------------------------------------
-Weights between input group 0 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 0 :
-Weight between 0 , 0 = 0.6959882
-Weight between 1 , 0 = 1.0
-Weight between 2 , 0 = 1.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.28385556
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
-Weight between 2 , 0 = 0.7738681
-Weight between 2 , 1 = 0.0
-Weight between 2 , 2 = 0.0
--------------------------------------------------------------------
-
-Best performing HANNS weights with performance0.22715724:
+Best performing HANNS weights with performance0.22745323:
 Weights between input group 0 and output group 0 :
 Weight between 0 , 0 = 1.0
 Weight between 1 , 0 = 1.0
@@ -58,18 +28,18 @@ Weight between 2 , 1 = 1.0
 Weight between 2 , 2 = 1.0
 -------------------------------------------------------------------
 
-Best performing HANNS weights with performance0.2437756:
+Best performing HANNS weights with performance0.24207968:
 Weights between input group 0 and output group 0 :
 Weight between 0 , 0 = 0.0
 Weight between 1 , 0 = 0.0
 -------------------------------------------------------------------
 Weights between input group 0 and output group 1 :
 Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.96524435
-Weight between 0 , 2 = 1.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
 Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.66030586
-Weight between 1 , 2 = 1.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
 -------------------------------------------------------------------
 Weights between input group 1 and output group 0 :
 Weight between 0 , 0 = 0.0
@@ -78,31 +48,781 @@ Weight between 2 , 0 = 0.0
 -------------------------------------------------------------------
 Weights between input group 1 and output group 1 :
 Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.35536733
-Weight between 0 , 2 = 1.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
 Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.38495195
-Weight between 1 , 2 = 1.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
 Weight between 2 , 0 = 0.0
-Weight between 2 , 1 = 0.08001343
-Weight between 2 , 2 = 1.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
 -------------------------------------------------------------------
 
-Best performing HANNS weights with performance0.22285771:
+Best performing HANNS weights with performance0.25589204:
 Weights between input group 0 and output group 0 :
-Weight between 0 , 0 = 0.9120129
-Weight between 1 , 0 = 0.7120834
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.24222249:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
 -------------------------------------------------------------------
 Weights between input group 0 and output group 1 :
 Weight between 0 , 0 = 1.0
 Weight between 0 , 1 = 1.0
 Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.22423941:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23585206:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23385233:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23531431:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.2417655:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.222054:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.22856736:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23278105:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.22732466:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23324287:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.22549641:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23649484:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.22516781:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.21314102:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.22052562:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.20988429:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23173833:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.22475713:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.234038:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.22572488:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23340952:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23683763:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.22986716:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.2211827:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.8279375
+Weight between 1 , 0 = 1.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.8367946
+Weight between 0 , 1 = 0.84565175
+Weight between 0 , 2 = 0.8545089
 Weight between 1 , 0 = 1.0
 Weight between 1 , 1 = 1.0
 Weight between 1 , 2 = 1.0
 -------------------------------------------------------------------
 Weights between input group 1 and output group 0 :
-Weight between 0 , 0 = 0.87994164
+Weight between 0 , 0 = 1.0
 Weight between 1 , 0 = 1.0
 Weight between 2 , 0 = 1.0
 -------------------------------------------------------------------
@@ -118,168 +838,18 @@ Weight between 2 , 1 = 1.0
 Weight between 2 , 2 = 1.0
 -------------------------------------------------------------------
 
-Best performing HANNS weights with performance0.2089991:
+Best performing HANNS weights with performance0.23470938:
 Weights between input group 0 and output group 0 :
-Weight between 0 , 0 = 0.0
-Weight between 1 , 0 = 0.0
--------------------------------------------------------------------
-Weights between input group 0 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 0 :
-Weight between 0 , 0 = 0.27616978
-Weight between 1 , 0 = 0.8038979
-Weight between 2 , 0 = 1.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.19189027
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
-Weight between 2 , 0 = 0.71961844
-Weight between 2 , 1 = 0.09837453
-Weight between 2 , 2 = 0.0
--------------------------------------------------------------------
-
-Best performing HANNS weights with performance0.2242176:
-Weights between input group 0 and output group 0 :
-Weight between 0 , 0 = 0.0
-Weight between 1 , 0 = 0.0
--------------------------------------------------------------------
-Weights between input group 0 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 0 :
-Weight between 0 , 0 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 2 , 0 = 0.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
-Weight between 2 , 0 = 0.0
-Weight between 2 , 1 = 0.0
-Weight between 2 , 2 = 0.0
--------------------------------------------------------------------
-
-Best performing HANNS weights with performance0.23615634:
-Weights between input group 0 and output group 0 :
-Weight between 0 , 0 = 0.0
-Weight between 1 , 0 = 0.0
--------------------------------------------------------------------
-Weights between input group 0 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 0 :
-Weight between 0 , 0 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 2 , 0 = 0.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
-Weight between 2 , 0 = 0.0
-Weight between 2 , 1 = 0.0
-Weight between 2 , 2 = 0.0
--------------------------------------------------------------------
-
-Best performing HANNS weights with performance0.22908711:
-Weights between input group 0 and output group 0 :
-Weight between 0 , 0 = 0.0
-Weight between 1 , 0 = 0.0
--------------------------------------------------------------------
-Weights between input group 0 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 0 :
-Weight between 0 , 0 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 2 , 0 = 0.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
-Weight between 2 , 0 = 0.0
-Weight between 2 , 1 = 0.0
-Weight between 2 , 2 = 0.0
--------------------------------------------------------------------
-
-Best performing HANNS weights with performance0.2252475:
-Weights between input group 0 and output group 0 :
-Weight between 0 , 0 = 1.0
-Weight between 1 , 0 = 1.0
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
 -------------------------------------------------------------------
 Weights between input group 0 and output group 1 :
 Weight between 0 , 0 = 1.0
 Weight between 0 , 1 = 1.0
 Weight between 0 , 2 = 1.0
-Weight between 1 , 0 = 1.0
+Weight between 1 , 0 = 0.8453804
 Weight between 1 , 1 = 1.0
 Weight between 1 , 2 = 1.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 0 :
-Weight between 0 , 0 = 1.0
-Weight between 1 , 0 = 1.0
-Weight between 2 , 0 = 1.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 1 :
-Weight between 0 , 0 = 1.0
-Weight between 0 , 1 = 1.0
-Weight between 0 , 2 = 1.0
-Weight between 1 , 0 = 1.0
-Weight between 1 , 1 = 1.0
-Weight between 1 , 2 = 1.0
-Weight between 2 , 0 = 1.0
-Weight between 2 , 1 = 1.0
-Weight between 2 , 2 = 1.0
--------------------------------------------------------------------
-
-Best performing HANNS weights with performance0.2182982:
-Weights between input group 0 and output group 0 :
-Weight between 0 , 0 = 0.0
-Weight between 1 , 0 = 0.0
--------------------------------------------------------------------
-Weights between input group 0 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.9629888
-Weight between 0 , 2 = 1.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.79541093
 -------------------------------------------------------------------
 Weights between input group 1 and output group 0 :
 Weight between 0 , 0 = 0.0
@@ -287,48 +857,18 @@ Weight between 1 , 0 = 0.0
 Weight between 2 , 0 = 0.0
 -------------------------------------------------------------------
 Weights between input group 1 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
 Weight between 2 , 0 = 0.0
-Weight between 2 , 1 = 0.0
-Weight between 2 , 2 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
 -------------------------------------------------------------------
 
-Best performing HANNS weights with performance0.21731824:
-Weights between input group 0 and output group 0 :
-Weight between 0 , 0 = 1.0
-Weight between 1 , 0 = 1.0
--------------------------------------------------------------------
-Weights between input group 0 and output group 1 :
-Weight between 0 , 0 = 1.0
-Weight between 0 , 1 = 1.0
-Weight between 0 , 2 = 1.0
-Weight between 1 , 0 = 1.0
-Weight between 1 , 1 = 1.0
-Weight between 1 , 2 = 1.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 0 :
-Weight between 0 , 0 = 1.0
-Weight between 1 , 0 = 1.0
-Weight between 2 , 0 = 1.0
--------------------------------------------------------------------
-Weights between input group 1 and output group 1 :
-Weight between 0 , 0 = 1.0
-Weight between 0 , 1 = 1.0
-Weight between 0 , 2 = 1.0
-Weight between 1 , 0 = 1.0
-Weight between 1 , 1 = 1.0
-Weight between 1 , 2 = 1.0
-Weight between 2 , 0 = 1.0
-Weight between 2 , 1 = 1.0
-Weight between 2 , 2 = 1.0
--------------------------------------------------------------------
-
-Best performing HANNS weights with performance0.24750525:
+Best performing HANNS weights with performance0.24247968:
 Weights between input group 0 and output group 0 :
 Weight between 0 , 0 = 0.0
 Weight between 1 , 0 = 0.0
@@ -358,18 +898,18 @@ Weight between 2 , 1 = 0.0
 Weight between 2 , 2 = 0.0
 -------------------------------------------------------------------
 
-Best performing HANNS weights with performance0.22572744:
+Best performing HANNS weights with performance0.2215969:
 Weights between input group 0 and output group 0 :
-Weight between 0 , 0 = 0.0
-Weight between 1 , 0 = 0.0
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
 -------------------------------------------------------------------
 Weights between input group 0 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
 -------------------------------------------------------------------
 Weights between input group 1 and output group 0 :
 Weight between 0 , 0 = 0.0
@@ -377,14 +917,74 @@ Weight between 1 , 0 = 0.0
 Weight between 2 , 0 = 0.0
 -------------------------------------------------------------------
 Weights between input group 1 and output group 1 :
-Weight between 0 , 0 = 0.0
-Weight between 0 , 1 = 0.0
-Weight between 0 , 2 = 0.0
-Weight between 1 , 0 = 0.0
-Weight between 1 , 1 = 0.0
-Weight between 1 , 2 = 0.0
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
 Weight between 2 , 0 = 0.0
-Weight between 2 , 1 = 0.0
-Weight between 2 , 2 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23652333:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.23563778:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.3402063
+Weight between 1 , 0 = 0.022206852
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 1.0
+Weight between 0 , 1 = 1.0
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.8453804
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.527381
+Weight between 0 , 1 = 0.9453217
+Weight between 0 , 2 = 1.0
+Weight between 1 , 0 = 0.20938152
+Weight between 1 , 1 = 0.62732226
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.30932277
+Weight between 2 , 2 = 0.7272635
 -------------------------------------------------------------------
 

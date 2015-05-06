@@ -934,7 +934,7 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 	
 	protected class EvaluatorHANNS extends Evaluator{
 		private QLambdaTestSim simulator;
-		private static final int SIMULATOR_STEPS = 10000;
+		private static final int SIMULATOR_STEPS = 7000;
 		private static final int REPETITIONS = 1;
 		
 		protected EvaluatorHANNS(int id, ThreadGroup tg){
