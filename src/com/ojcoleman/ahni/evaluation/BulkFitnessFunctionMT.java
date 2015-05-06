@@ -35,6 +35,7 @@ import com.anji.integration.TranscriberException;
 import com.anji.util.Randomizer;
 import com.ojcoleman.ahni.evaluation.novelty.Behaviour;
 import com.ojcoleman.ahni.evaluation.novelty.NoveltySearch;
+import com.ojcoleman.ahni.experiments.HANNS_experiments.HANNS_Experiments_Constants;
 import com.ojcoleman.ahni.hyperneat.Configurable;
 import com.ojcoleman.ahni.hyperneat.HyperNEATConfiguration;
 import com.ojcoleman.ahni.hyperneat.HyperNEATEvolver;
@@ -244,7 +245,6 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		if (props.getBooleanProperty("fitness.function.multi.addingsub", false)) {
 			return;
 		}
-
 		targetPerformance = props.getFloatProperty(HyperNEATEvolver.PERFORMANCE_TARGET_KEY, 1);
 		targetPerformanceType = props.getProperty(HyperNEATEvolver.PERFORMANCE_TARGET_TYPE_KEY, "higher").toLowerCase().trim().equals("higher") ? 1 : 0;
 		targetPerformanceAverageCount = props.getIntProperty(HyperNEATEvolver.PERFORMANCE_TARGET_AVERAGE_KEY, 1);
@@ -269,7 +269,7 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 			RosUtils.utilsShallStart();
 			evaluators = new EvaluatorHANNS[numThreads];
 			for (int i = 0; i < numThreads; i++) {
-				evaluators[i] = new EvaluatorHANNS(i, eg);
+				evaluators[i] = new EvaluatorHANNS(i, eg, props.getIntProperty(HANNS_Experiments_Constants.SIMULATOR_STEPS_COUNT, 1000));
 				evaluators[i].start();
 			}
 		}
@@ -934,11 +934,14 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 	
 	protected class EvaluatorHANNS extends Evaluator{
 		private QLambdaTestSim simulator;
-		private static final int SIMULATOR_STEPS = 7000;
+		//private static final int SIMULATOR_STEPS = 7000;
 		private static final int REPETITIONS = 1;
+		private int stepsCount;
 		
-		protected EvaluatorHANNS(int id, ThreadGroup tg){
+		
+		protected EvaluatorHANNS(int id, ThreadGroup tg, int simulatorStepsCount){
 			super(id, tg);
+			this.stepsCount = simulatorStepsCount;
 			//super(id, tg);
 			initSimulator();
 		}
@@ -965,7 +968,7 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 			float sum = 0;
 			for (int i = 0; i < REPETITIONS; i++) {
 				simulator.reset(false);	
-				simulator.run(0, SIMULATOR_STEPS);								// run for N steps
+				simulator.run(0, stepsCount);								// run for N steps
 				sum+=simulator.getFitnessVal(); 		
 			}
 						// read fitness (from <0,1>)

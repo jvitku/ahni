@@ -1,0 +1,2 @@
+Gen	Fittest  	F0QLam	Perfor	BestPrf  	F0QLam	Perfor	ZPC	ZFC	SC	NS	ES	SCT	SS	SA    	SNBP	GS      	Time	ETA      	Mem		Avg
+0 	     1050	0.7524	0.7524	     1050	0.7524	0.7524	0	0	4	4	0	4.0	1/17	1/1	0	16/17/19	2.087	0 00:00:02	61MB 	0.46132142245769503

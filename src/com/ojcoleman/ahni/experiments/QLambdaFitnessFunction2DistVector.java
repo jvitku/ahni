@@ -15,6 +15,7 @@ import ca.nengo.model.StructuralException;
 import com.anji.integration.Activator;
 import com.ojcoleman.ahni.evaluation.BulkFitnessFunctionMT;
 import com.ojcoleman.ahni.evaluation.HyperNEATFitnessFunction;
+import com.ojcoleman.ahni.experiments.HANNS_experiments.HANNS_Experiments_Constants;
 import com.ojcoleman.ahni.experiments.objectrecognition.ObjectRecognitionFitnessFunction2;
 import com.ojcoleman.ahni.hyperneat.Properties;
 import com.ojcoleman.ahni.nn.GridNet;
@@ -29,8 +30,7 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 	
 	
 	private final static int DISTANCE_BETWEEN_IO_GROUPS = 0;
-	private final static String BEST_ACTIVATOR_OUTPUT_FILE = "/home/pavol/nengoros/ahni/activator_outputs/out1.txt";
-	
+	private String activatorLogFilePath;
 	
 	/**
 	 * See <a href=" {@docRoot} /params.htm" target="anji_params">Parameter Details </a> for specific property settings.
@@ -39,8 +39,10 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 	 */
 	public void init(Properties props) {
 		super.init(props);
-		File f = new File(BEST_ACTIVATOR_OUTPUT_FILE);
+		activatorLogFilePath = props.getProperty(HANNS_Experiments_Constants.ACTIVATOR_LOG_FILE_PATH);
+		File f = new File(activatorLogFilePath);
 		f.delete();
+		f.getParentFile().mkdirs();
 	}
 
 
@@ -111,7 +113,7 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 			return;
 		}
 		try{
-			PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(BEST_ACTIVATOR_OUTPUT_FILE, true)));
+			PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(activatorLogFilePath, true)));
 			InterLayerWeights weights = getBestPerformingActivator()[0];
 			setBestPerformingActivator(null);
 			float perf = getBestPerformingActivatorPerformance();

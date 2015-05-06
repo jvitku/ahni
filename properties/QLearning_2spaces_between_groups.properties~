@@ -6,8 +6,8 @@ run.reset=true
 # evolution
 ###########
 num.runs=1
-num.generations=200
-popul.size=300
+num.generations=1
+popul.size=20
 
 performance.target=0.95
 performance.target.type=higher
@@ -45,7 +45,7 @@ crossover.proportion=0.5
 #[1, 5]
 selector.elitism.min.specie.size=1
 #percent of individuals from each species copied to next generation unchanged
-selector.elitism.proportion=0.02
+selector.elitism.proportion=0.0
 #min number to select from a species (if it has size >=  selector.elitism.min.specie.size)
 selector.elitism.min.to.select=1
 selector.roulette=false
@@ -86,20 +86,9 @@ fitness.hyperneat.scale.performance=0.95
 fitness.hyperneat.scale.recordintermediateperformance=true
 
 #experiment specific
-or.shapesize=5
-or.shapetype=random vh
-or.numedgesinshape=4
-or.numshapesinlibrary=3
-or.numnontargetshapesshown=1
-or.targetshapeindex=0
-or.fitness.weight.percentcorrect=1
-or.fitness.weight.wsose=1
-or.fitness.weight.distance=0
-or.fitness.weight.distance.inverse=0
-or.performance.metric=or.fitness.weight.percentcorrect
-or.numtrials=200
-or.saveimages=true
-output.dir=../or3
+hanns.populationinfologfilepath=/log_population/qlearning/q_learning_population.txt
+hanns.activatorlogfilepath=/log_population/qlearning/q_learning_activator.txt
+hanns.simulatorstepscount=20
 
 
 ################

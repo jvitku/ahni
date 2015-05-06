@@ -1,0 +1,30 @@
+Best performing HANNS weights with performance0.75238097:
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.0
+Weight between 1 , 2 = 0.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.0
+Weight between 2 , 2 = 0.0
+-------------------------------------------------------------------
+

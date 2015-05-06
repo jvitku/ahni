@@ -19,22 +19,7 @@ import org.jgapcustomised.Chromosome;
  * @author Admin
  */
 public class QLambdaFakeFitnessFunction extends HyperNEATFitnessFunction {
-    private static Logger logger = Logger.getLogger(ObjectRecognitionFitnessFunction2.class);
-
-	private double[][][] stimuli;
-	private int[][] targetCoords;
-	private int maxFitnessValue;
-
-	private final static int numTrials = 100;
-	private final static int numSmallSquares = 1;
-	private int smallSquareSize = 1;
-	private int largeSquareSize = smallSquareSize * 3;
-
-	/**
-	 * See <a href=" {@docRoot} /params.htm" target="anji_params">Parameter Details </a> for specific property settings.
-	 * 
-	 * @param props configuration parameters
-	 */
+    
 	public void init(Properties props) {
 		super.init(props);
 		setMaxFitnessValue();

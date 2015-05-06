@@ -28,6 +28,8 @@ import javax.imageio.ImageIO;
 
 
 
+
+
 import org.apache.log4j.Logger;
 import org.jgapcustomised.BulkFitnessFunction;
 import org.jgapcustomised.Chromosome;
@@ -58,6 +60,7 @@ import com.anji.integration.TranscriberException;
 import com.ojcoleman.ahni.evaluation.AHNIFitnessFunction;
 import com.ojcoleman.ahni.event.AHNIEvent;
 import com.ojcoleman.ahni.event.AHNIEventListener;
+import com.ojcoleman.ahni.experiments.HANNS_experiments.HANNS_Experiments_Constants;
 import com.ojcoleman.ahni.nn.BainNN;
 import com.ojcoleman.ahni.nn.NNAdaptor;
 import com.ojcoleman.ahni.transcriber.HyperNEATTranscriber;
@@ -106,8 +109,7 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 	public static final String LOG_CHAMP_TOIMAGE_KEY = "log.champ.toimage";
 	public static final String LOG_SPECIES_HISTORY_KEY = "log.species_history";
 	public static final String INITIAL_CPPN = "hyperneat.cppn.initial";
-	public static final String LOG_FILE = "/home/pavol/nengoros/ahni/activator_outputs/out2.txt";
-
+	
 	private HyperNEATConfiguration config = null;
 	private List<AHNIEventListener> listeners = new ArrayList<AHNIEventListener>();
 	private Properties properties = null;
@@ -337,10 +339,13 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 		TreeMap<Long, Species> allSpeciesEver = new TreeMap<Long, Species>();
 
 		fireEvent(new AHNIEvent(AHNIEvent.Type.RUN_START, this, this));
-		File f = new File(LOG_FILE);
+		//create log file path and delete old log
+		File f = new File(properties.getProperty(HANNS_Experiments_Constants.LOG_FILE_PATH));
 		f.delete();
+		f.getParentFile().mkdirs();
+		//evolution
 		for (generation = 0; generation < numEvolutions && !bulkFitnessFunc.endRun(); generation++) {
-			PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(LOG_FILE, true)));
+			PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(properties.getProperty(HANNS_Experiments_Constants.LOG_FILE_PATH), true)));
 			long start = System.currentTimeMillis();
 			
 			fireEvent(new AHNIEvent(AHNIEvent.Type.GENERATION_START, this, this));
