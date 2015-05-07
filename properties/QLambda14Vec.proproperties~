@@ -40,7 +40,7 @@ weight.mutation.std.dev=1.0
 #percent of individuals used as parents
 survival.rate=0.3
 #proportion of sexual (crossover) versus asexual reproduction
-crossover.proportion=0.8
+crossover.proportion=0.5
 
 #[1, 5]
 selector.elitism.min.specie.size=1
@@ -65,7 +65,7 @@ chrom.compat.disjoint.coeff=1.0
 chrom.compat.common.coeff=0.2
 
 #compatability threshold [0.1, 4.0], relative to c#
-speciation.threshold=10.0
+speciation.threshold=4.0
 speciation.target=5
 #speciation.class=com.anji.neat.SpeciationStrategyKMeans
 
@@ -73,11 +73,11 @@ speciation.target=5
 ##################
 # fitness function
 ##################
-fitness_function.class=com.ojcoleman.ahni.experiments.QLambdaFitnessFunction2DistVector
+fitness_function.class=com.ojcoleman.ahni.experiments.QLamdaFitness14Vector
 fitness.target=0.99
 #max threads to use for fitness evaluation (including transcription of genotype/cppn to phenotype/substrate)
 #if value is <= 0 then the detected number of processor cores will be used
-fitness.max_threads=2
+fitness.max_threads=1
 #if scale.factor > 1 then the substrate height, width and connection.range 
 #will be multiplied by scale.factor every time scale.fitness is reached, at 
 #most scale.times times. If the 
@@ -87,9 +87,9 @@ fitness.hyperneat.scale.performance=0.95
 fitness.hyperneat.scale.recordintermediateperformance=true
 
 #experiment specific
-hanns.populationinfologfilepath=log_population/qlearning/q_learning_population.txt
-hanns.activatorlogfilepath=log_population/qlearning/q_learning_activator.txt
-hanns.simulatorstepscount=15000
+hanns.populationinfologfilepath=log_population/qlearning/q_learning_population_14vec.txt
+hanns.activatorlogfilepath=log_population/qlearning/q_learning_activator_14vec.txt
+hanns.simulatorstepscount=7000
 
 
 ################
@@ -125,12 +125,12 @@ ann.hyperneat.useinputlayerencoding=false
 
 ann.hyperneat.connection.expression.threshold=0.2
 ann.hyperneat.connection.range=-1
-ann.transcriber.connection.weight.min=0
+ann.transcriber.connection.weight.min=-1
 ann.transcriber.connection.weight.max=1
 
 ann.hyperneat.depth=2
-ann.hyperneat.height=1,1
-ann.hyperneat.width=4,5
+ann.hyperneat.height=4,4
+ann.hyperneat.width=4,4
 
 
 #############

@@ -280,6 +280,11 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 			for (int i = 0; i < numThreads; i++) {
 				evaluators[i] = new EvaluatorHANNS(i, eg, props.getIntProperty(HANNS_Experiments_Constants.SIMULATOR_STEPS_COUNT, 1000));
 				evaluators[i].start();
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e1) {
+					e1.printStackTrace();
+				}
 			}
 		}
 		else{
