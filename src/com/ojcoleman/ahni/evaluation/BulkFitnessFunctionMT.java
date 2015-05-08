@@ -166,7 +166,7 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 	protected ArrayList<MinionHandler> minions = null;
 	
 	private static InterLayerWeights[] bestPerformingSubstrate;
-	private static float bestPerformingSubstratePerformance;
+	private static double bestPerformingSubstratePerformance;
 	private static String bestPerformingSpecie;
 	
 	public static synchronized void setBestPerformingSpecie(long specie, long age, int size){
@@ -177,7 +177,7 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		bestPerformingSubstrate = a;
 	}
 	
-	public static synchronized void setBestPerformingActivatorPerformance(float a){
+	public static synchronized void setBestPerformingActivatorPerformance(double a){
 		bestPerformingSubstratePerformance = a;
 	}
 	
@@ -185,7 +185,7 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		return bestPerformingSubstrate;
 	}
 	
-	public static synchronized float getBestPerformingActivatorPerformance(){
+	public static synchronized double getBestPerformingActivatorPerformance(){
 		return bestPerformingSubstratePerformance;
 	}
 	

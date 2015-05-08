@@ -340,12 +340,12 @@ public class HyperNEATEvolver implements Configurable, GeneticEventListener {
 
 		fireEvent(new AHNIEvent(AHNIEvent.Type.RUN_START, this, this));
 		//create log file path and delete old log
-		File f = new File(properties.getProperty(HANNS_Experiments_Constants.LOG_FILE_PATH));
+		File f = new File(properties.getProperty(HANNS_Experiments_Constants.LOG_FILE_PATH,"logs/log.txt"));
 		f.delete();
 		f.getParentFile().mkdirs();
 		//evolution
 		for (generation = 0; generation < numEvolutions && !bulkFitnessFunc.endRun(); generation++) {
-			PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(properties.getProperty(HANNS_Experiments_Constants.LOG_FILE_PATH), true)));
+			PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(properties.getProperty(HANNS_Experiments_Constants.LOG_FILE_PATH,"logs/log.txt"), true)));
 			long start = System.currentTimeMillis();
 			
 			fireEvent(new AHNIEvent(AHNIEvent.Type.GENERATION_START, this, this));

@@ -336,6 +336,7 @@ public class Genotype implements Serializable {
 			}
 			
 			// Speciate population.
+
 			m_specStrategy.speciate(m_chromosomes, m_species, this);
 			// Update originalSize for each species.
 			for (Species species : m_species) {
@@ -440,7 +441,9 @@ public class Genotype implements Serializable {
 			// other things this allows for RAM conservation.
 			m_activeConfiguration.getEventManager().fireGeneticEvent(new GeneticEvent(GeneticEvent.GENOTYPE_START_GENETIC_OPERATORS_EVENT, this));
 
-			
+			if(maxSpeciesSize == 1 & minSpeciesSize == 1){
+				System.out.println("Here");
+			}
 			// Execute Reproduction Operators.
 			// -------------------------------------
 			List<ChromosomeMaterial> offspring = new ArrayList<ChromosomeMaterial>();

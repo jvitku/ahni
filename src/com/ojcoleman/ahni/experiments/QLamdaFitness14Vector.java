@@ -76,23 +76,23 @@ public class QLamdaFitness14Vector  extends HyperNEATFitnessFunction {
 //			vector[11] = 0.0f;
 //			vector[12] = 0.0f;
 //			vector[13] = 1.0f;
+			int GRID_SIZE = gridNet.getWeights()[0].length - 1;
 			
 			
-			
-			vector[0] = (float)gridNet.getWeights()[0][0][0][0][0][3];
+			vector[0] = (float)gridNet.getWeights()[0][0][0][0][0][GRID_SIZE];
 			vector[1] = (float)gridNet.getWeights()[0][0][0][0][0][0];
-			vector[2] = (float)gridNet.getWeights()[0][0][0][0][3][0];
-			vector[3] = (float)gridNet.getWeights()[0][0][0][0][3][3];
-			vector[4] = (float)gridNet.getWeights()[0][0][3][0][0][3];
-			vector[5] = (float)gridNet.getWeights()[0][0][3][0][0][0];
-			vector[6] = (float)gridNet.getWeights()[0][0][3][0][3][0];
-			vector[7] = (float)gridNet.getWeights()[0][0][3][0][3][3];
-			vector[8] = (float)gridNet.getWeights()[0][3][0][0][0][3];
-			vector[9] = (float)gridNet.getWeights()[0][3][0][0][3][0];
-			vector[10] = (float)gridNet.getWeights()[0][3][0][0][3][3];
-			vector[11] = (float)gridNet.getWeights()[0][3][3][0][0][3];
-			vector[12] = (float)gridNet.getWeights()[0][3][3][0][3][0];
-			vector[13] = (float)gridNet.getWeights()[0][3][3][0][3][3];
+			vector[2] = (float)gridNet.getWeights()[0][0][0][0][GRID_SIZE][0];
+			vector[3] = (float)gridNet.getWeights()[0][0][0][0][GRID_SIZE][GRID_SIZE];
+			vector[4] = (float)gridNet.getWeights()[0][0][GRID_SIZE][0][0][GRID_SIZE];
+			vector[5] = (float)gridNet.getWeights()[0][0][GRID_SIZE][0][0][0];
+			vector[6] = (float)gridNet.getWeights()[0][0][GRID_SIZE][0][GRID_SIZE][0];
+			vector[7] = (float)gridNet.getWeights()[0][0][GRID_SIZE][0][GRID_SIZE][GRID_SIZE];
+			vector[8] = (float)gridNet.getWeights()[0][GRID_SIZE][0][0][0][GRID_SIZE];
+			vector[9] = (float)gridNet.getWeights()[0][GRID_SIZE][0][0][GRID_SIZE][0];
+			vector[10] = (float)gridNet.getWeights()[0][GRID_SIZE][0][0][GRID_SIZE][GRID_SIZE];
+			vector[11] = (float)gridNet.getWeights()[0][GRID_SIZE][GRID_SIZE][0][0][GRID_SIZE];
+			vector[12] = (float)gridNet.getWeights()[0][GRID_SIZE][GRID_SIZE][0][GRID_SIZE][0];
+			vector[13] = (float)gridNet.getWeights()[0][GRID_SIZE][GRID_SIZE][0][GRID_SIZE][GRID_SIZE];
 			Float[] genome = QLambdaTestSim.decode(vector);
 			try {
 				evaluator.getSimulator().setInitWeights();
@@ -169,7 +169,7 @@ public class QLamdaFitness14Vector  extends HyperNEATFitnessFunction {
 				PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(activatorLogFilePath, true)));
 				InterLayerWeights weights = getBestPerformingActivator()[0];
 				setBestPerformingActivator(null);
-				float perf = getBestPerformingActivatorPerformance();
+				double perf = getBestPerformingActivatorPerformance();
 				setBestPerformingActivatorPerformance(0.0f);
 				
 				ArrayList<IOGroup> inputs = weights.getInputs();

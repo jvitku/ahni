@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import org.apache.log4j.Logger;
 import org.jgapcustomised.Chromosome;
 
 import ca.nengo.model.StructuralException;
@@ -16,19 +15,14 @@ import com.anji.integration.Activator;
 import com.ojcoleman.ahni.evaluation.BulkFitnessFunctionMT;
 import com.ojcoleman.ahni.evaluation.HyperNEATFitnessFunction;
 import com.ojcoleman.ahni.experiments.HANNS_experiments.HANNS_Experiments_Constants;
-import com.ojcoleman.ahni.experiments.objectrecognition.ObjectRecognitionFitnessFunction2;
 import com.ojcoleman.ahni.hyperneat.Properties;
 import com.ojcoleman.ahni.nn.GridNet;
-import com.ojcoleman.ahni.transcriber.HyperNEATTranscriber;
 
 import ctu.nengorosHeadless.network.connections.InterLayerWeights;
 import ctu.nengorosHeadless.network.connections.impl.IOGroup;
+import design.models.QLambdaTestSim;
 
-
-public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction {
-	//QLambdaEA a = new QLambdaEA();
-	
-	
+public class QLambdaFitness14VectorSchool extends HyperNEATFitnessFunction{
 	private final static int DISTANCE_BETWEEN_IO_GROUPS = 0;
 	private String activatorLogFilePath;
 	
@@ -62,40 +56,49 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 	protected double evaluate(Chromosome genotype, Activator activator, int threadIndex) {
 		GridNet gridNet = (GridNet)activator;
 		EvaluatorHANNS evaluator = (EvaluatorHANNS)this.evaluators[threadIndex];
-//		evaluator.getSimulator().
-//		evaluator.evaluateGenomeInSimulator();
-		ArrayList<IOGroup> inputs = evaluator.getSimulator().getInterLayerNo(0).getInputs();
-		ArrayList<IOGroup> outputs = evaluator.getSimulator().getInterLayerNo(0).getOutputs();
-		for (int i = 0; i < inputs.size(); i++) {
-			for (int j = 0; j < outputs.size(); j++) {
-				int inStartInd = inputs.get(i).getStartingIndex();
-				int inNoUnits = inputs.get(i).getNoUnits();
-				
-				int outStartInd = outputs.get(j).getStartingIndex();
-				int outNoUnits = outputs.get(j).getNoUnits();
-				// this submatrix of the weightMatrix defines connections only between these two 
-				float[][] submatrix = new float[inNoUnits][outNoUnits];
-				for (int k = 0; k < submatrix.length; k++) {
-					for (int k2 = 0; k2 < submatrix[0].length; k2++) {
-						submatrix[k][k2] = (float)gridNet.getWeights()[0][0][inStartInd+k+i*DISTANCE_BETWEEN_IO_GROUPS][0][0][outStartInd+k2+j*DISTANCE_BETWEEN_IO_GROUPS];
-//						if((float)gridNet.getWeights()[0][0][inStartInd+k+i*DISTANCE_BETWEEN_IO_GROUPS][0][0][outStartInd+k2+j*DISTANCE_BETWEEN_IO_GROUPS] > 0.5){
-//							submatrix[k][k2] = 1.0f;
-//						}
-//						else{
-//							submatrix[k][k2] = 0.0f;
-//						}
-					}
-				}
-				try{
-					evaluator.getSimulator().getInterLayerNo(0).setWeightsBetween(i, j, submatrix);
-				}
-				catch (StructuralException e) {
-					e.printStackTrace();
-					System.err.println("Connection weights not set");
-					return 0.0f;
-				}	
-			}
+		Float[] vector = new Float[14];
+//		vector[0] = 0.0f;
+//		vector[1] = 1.0f;
+//		vector[2] = 0.0f;
+//		vector[3] = 0.0f;
+//		vector[4] = 1.0f;
+//		vector[5] = 0.0f;
+//		vector[6] = 0.0f;
+//		vector[7] = 0.0f;
+//		vector[8] = 0.0f;
+//		vector[9] = 1.0f;
+//		vector[10] = 0.0f;
+//		vector[11] = 0.0f;
+//		vector[12] = 0.0f;
+//		vector[13] = 1.0f;
+		int GRID_SIZE = gridNet.getWeights()[0].length;
+		int R_POS = 0;
+		int MOT_IM_POS = GRID_SIZE/4;
+		int X_POS = (GRID_SIZE/4)*2;
+		int Y_POS = (GRID_SIZE/4)*3;
+		
+		vector[0] = (float)gridNet.getWeights()[0][R_POS][R_POS][0][MOT_IM_POS][MOT_IM_POS];
+		vector[1] = (float)gridNet.getWeights()[0][R_POS][R_POS][0][R_POS][R_POS];
+		vector[2] = (float)gridNet.getWeights()[0][R_POS][R_POS][0][X_POS][X_POS];
+		vector[3] = (float)gridNet.getWeights()[0][R_POS][R_POS][0][Y_POS][Y_POS];
+		vector[4] = (float)gridNet.getWeights()[0][MOT_IM_POS][MOT_IM_POS][0][MOT_IM_POS][MOT_IM_POS];
+		vector[5] = (float)gridNet.getWeights()[0][MOT_IM_POS][MOT_IM_POS][0][R_POS][R_POS];
+		vector[6] = (float)gridNet.getWeights()[0][MOT_IM_POS][MOT_IM_POS][0][X_POS][X_POS];
+		vector[7] = (float)gridNet.getWeights()[0][MOT_IM_POS][MOT_IM_POS][0][Y_POS][Y_POS];
+		vector[8] = (float)gridNet.getWeights()[0][X_POS][X_POS][0][MOT_IM_POS][MOT_IM_POS];
+		vector[9] = (float)gridNet.getWeights()[0][X_POS][X_POS][0][X_POS][X_POS];
+		vector[10] = (float)gridNet.getWeights()[0][X_POS][X_POS][0][Y_POS][Y_POS];
+		vector[11] = (float)gridNet.getWeights()[0][Y_POS][Y_POS][0][MOT_IM_POS][MOT_IM_POS];
+		vector[12] = (float)gridNet.getWeights()[0][Y_POS][Y_POS][0][X_POS][X_POS];
+		vector[13] = (float)gridNet.getWeights()[0][Y_POS][Y_POS][0][Y_POS][Y_POS];
+		Float[] genome = QLambdaTestSim.decode(vector);
+		try {
+//			evaluator.getSimulator().setInitWeights();
+			evaluator.getSimulator().getInterLayerNo(0).setVector(genome);
+		} catch (StructuralException e) {
+			e.printStackTrace();
 		}
+		
 		double fitnessVal = evaluator.evaluateGenomeInSimulator();
 		genotype.setPerformanceValue(fitnessVal);
 		genotype.setFitnessValue(fitnessVal);
@@ -152,6 +155,4 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 			System.err.println(e.getMessage()+e.getStackTrace());
 		}
 	}
-	
-	
 }

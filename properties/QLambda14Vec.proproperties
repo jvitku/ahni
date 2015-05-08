@@ -77,7 +77,7 @@ fitness_function.class=com.ojcoleman.ahni.experiments.QLamdaFitness14Vector
 fitness.target=0.99
 #max threads to use for fitness evaluation (including transcription of genotype/cppn to phenotype/substrate)
 #if value is <= 0 then the detected number of processor cores will be used
-fitness.max_threads=1
+fitness.max_threads=2
 #if scale.factor > 1 then the substrate height, width and connection.range 
 #will be multiplied by scale.factor every time scale.fitness is reached, at 
 #most scale.times times. If the 
@@ -89,7 +89,7 @@ fitness.hyperneat.scale.recordintermediateperformance=true
 #experiment specific
 hanns.populationinfologfilepath=log_population/qlearning/q_learning_population_14vec.txt
 hanns.activatorlogfilepath=log_population/qlearning/q_learning_activator_14vec.txt
-hanns.simulatorstepscount=15000
+hanns.simulatorstepscount=7000
 
 
 ################
@@ -125,12 +125,12 @@ ann.hyperneat.useinputlayerencoding=false
 
 ann.hyperneat.connection.expression.threshold=0.2
 ann.hyperneat.connection.range=-1
-ann.transcriber.connection.weight.min=-1
+ann.transcriber.connection.weight.min=0
 ann.transcriber.connection.weight.max=1
 
 ann.hyperneat.depth=2
-ann.hyperneat.height=4,4
-ann.hyperneat.width=4,4
+ann.hyperneat.height=16,16
+ann.hyperneat.width=16,16
 
 
 #############
