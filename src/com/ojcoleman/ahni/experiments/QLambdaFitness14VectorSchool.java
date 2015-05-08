@@ -93,7 +93,7 @@ public class QLambdaFitness14VectorSchool extends HyperNEATFitnessFunction{
 		vector[13] = (float)gridNet.getWeights()[0][Y_POS][Y_POS][0][Y_POS][Y_POS];
 		Float[] genome = QLambdaTestSim.decode(vector);
 		try {
-//			evaluator.getSimulator().setInitWeights();
+			evaluator.getSimulator().setInitWeights();
 			evaluator.getSimulator().getInterLayerNo(0).setVector(genome);
 		} catch (StructuralException e) {
 			e.printStackTrace();

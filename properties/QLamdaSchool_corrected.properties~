@@ -7,7 +7,7 @@ run.reset=true
 ###########
 num.runs=10
 num.generations=200
-popul.size=50
+popul.size=70
 
 performance.target=1.0
 performance.target.type=higher
@@ -66,7 +66,7 @@ chrom.compat.common.coeff=1.0
 
 #compatability threshold [0.1, 4.0], relative to c#
 speciation.threshold=4.0
-speciation.target=3
+speciation.target=5
 
 
 ##################
@@ -76,7 +76,7 @@ fitness_function.class=com.ojcoleman.ahni.experiments.QLambdaFitness14VectorScho
 fitness.target=0.99
 #max threads to use for fitness evaluation (including transcription of genotype/cppn to phenotype/substrate)
 #if value is <= 0 then the detected number of processor cores will be used
-fitness.max_threads=1
+fitness.max_threads=2
 #if scale.factor > 1 then the substrate height, width and connection.range 
 #will be multiplied by scale.factor every time scale.fitness is reached, at 
 #most scale.times times. If the 
@@ -86,9 +86,9 @@ fitness.hyperneat.scale.performance=0.95
 fitness.hyperneat.scale.recordintermediateperformance=true
 
 #experiment specific
-hanns.populationinfologfilepath=log_population/qlearning/q_learning_population_school_corrected.txt
-hanns.activatorlogfilepath=log_population/qlearning/q_learning_activator_school_corrected.txt
-hanns.simulatorstepscount=7000
+hanns.populationinfologfilepath=log_population/qlearning/q_learning_population_school_corrected_CTU.txt
+hanns.activatorlogfilepath=log_population/qlearning/q_learning_activator_school_corrected_CTU.txt
+hanns.simulatorstepscount=15000
 
 
 ################

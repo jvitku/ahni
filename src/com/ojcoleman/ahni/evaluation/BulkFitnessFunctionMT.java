@@ -969,7 +969,7 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		protected void initSimulator(){
 			
 			
-			simulator = new QLambdaTestSimSmall();
+			simulator = new QLambdaPaperSmaller();
 			simulator.defineNetwork();
 		}
 		
