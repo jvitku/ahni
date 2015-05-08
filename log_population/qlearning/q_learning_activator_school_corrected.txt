@@ -1238,3 +1238,65 @@ Weight between 2 , 1 = 1.0
 Weight between 2 , 2 = 1.0
 -------------------------------------------------------------------
 
+Best performing HANNS weights with performance0.3214683532714844:
+Specie ID:63, Age :35, Size :1
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.34566137
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.028705126
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.19307452
+Weight between 1 , 2 = 0.19307452
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 2 , 0 = 0.21663964
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 0.6626176
+Weight between 1 , 2 = 0.51003075
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 0.21663964
+Weight between 2 , 2 = 0.97957385
+-------------------------------------------------------------------
+
+Best performing HANNS weights with performance0.3489142656326294:
+Specie ID:19, Age :37, Size :1
+Weights between input group 0 and output group 0 :
+Weight between 0 , 0 = 0.635161
+Weight between 1 , 0 = 1.0
+-------------------------------------------------------------------
+Weights between input group 0 and output group 1 :
+Weight between 0 , 0 = 0.6490664
+Weight between 0 , 1 = 0.635161
+Weight between 0 , 2 = 0.635161
+Weight between 1 , 0 = 1.0
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 0 :
+Weight between 0 , 0 = 0.0
+Weight between 1 , 0 = 1.0
+Weight between 2 , 0 = 1.0
+-------------------------------------------------------------------
+Weights between input group 1 and output group 1 :
+Weight between 0 , 0 = 0.0
+Weight between 0 , 1 = 0.0
+Weight between 0 , 2 = 0.0
+Weight between 1 , 0 = 0.0
+Weight between 1 , 1 = 1.0
+Weight between 1 , 2 = 1.0
+Weight between 2 , 0 = 0.0
+Weight between 2 , 1 = 1.0
+Weight between 2 , 2 = 1.0
+-------------------------------------------------------------------
+
