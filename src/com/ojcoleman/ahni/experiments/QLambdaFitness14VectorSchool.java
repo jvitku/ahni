@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.jgapcustomised.Chromosome;
 
@@ -129,7 +130,7 @@ public class QLambdaFitness14VectorSchool extends HyperNEATFitnessFunction{
 //			ArrayList<IOGroup> outputs = weights.getOutputs();
 			writer.println("Best performing HANNS weights with performance"+perf+":");
 			writer.println(BulkFitnessFunctionMT.getBestPerformingSpecie());
-			writer.println(getBestPerformingActivator());
+			writer.println(Arrays.toString(getBestPerformingActivator()));
 //			for (int i = 0; i < inputs.size(); i++) {
 //				for (int j = 0; j < outputs.size(); j++) {
 //					writer.println("Weights between input group "+i+" and output group "+j+" :");
