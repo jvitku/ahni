@@ -90,8 +90,8 @@ public class SpeciationStrategyOriginal implements SpeciationStrategy {
 		
 		// Attempt to maintain species count target, don't change threshold too frequently.
 		int targetSpeciesCount = specParms.getSpeciationTarget();
-		//int maxAdjustFreq = (int) Math.round(Math.pow(genotype.getConfiguration().getPopulationSize(), 0.333));
-		int maxAdjustFreq = 0;
+		int maxAdjustFreq = (int) Math.round(Math.pow(genotype.getConfiguration().getPopulationSize(), 0.333));
+		//int maxAdjustFreq = 0;
 		if (targetSpeciesCount > 0 && speciesList.size() != targetSpeciesCount && (genotype.getGeneration() - lastGenChangedSpeciesCompatThreshold > maxAdjustFreq)) {
 			double ratio = (double) speciesList.size() / targetSpeciesCount;
 			double factor = (ratio - 1) * 0.1 + 1;

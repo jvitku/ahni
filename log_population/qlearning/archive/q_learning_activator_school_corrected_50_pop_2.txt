@@ -1,0 +1,408 @@
+Best performing HANNS weights with performance0.2555920481681824:
+null
+[0.99373126, 0.93326217, 1.0, 1.0, 0.5021386, 0.31103238, 0.5626077, 0.64484966, 0.0, 0.07101503, 0.13148415, 0.0, 0.0, 0.0]
+
+Best performing HANNS weights with performance0.24567919969558716:
+Specie ID:0, Age :1, Size :1
+[0.99373126, 0.93326217, 1.0, 1.0, 0.5021386, 0.31103238, 0.5626077, 0.64484966, 0.0, 0.07101503, 0.13148415, 0.0, 0.0, 0.0]
+
+Best performing HANNS weights with performance0.2756320834159851:
+Specie ID:0, Age :2, Size :1
+[0.99373126, 0.93326217, 1.0, 1.0, 0.5021386, 0.31103238, 0.5626077, 0.64484966, 0.0, 0.07101503, 0.13148415, 0.0, 0.0, 0.0]
+
+Best performing HANNS weights with performance0.4351521134376526:
+Specie ID:0, Age :3, Size :1
+[0.0, 0.076691836, 0.0, 0.0, 0.7649843, 0.0, 0.051131133, 0.0, 0.0, 1.0, 0.73942363, 0.68535984, 0.38349462, 1.0]
+
+Best performing HANNS weights with performance0.4345521926879883:
+Specie ID:3, Age :2, Size :1
+[0.0, 0.076691836, 0.0, 0.0, 0.7649843, 0.0, 0.051131133, 0.0, 0.0, 1.0, 0.73942363, 0.68535984, 0.38349462, 1.0]
+
+Best performing HANNS weights with performance0.48605912923812866:
+Specie ID:3, Age :3, Size :1
+[0.0, 0.076691836, 0.0, 0.0, 0.7649843, 0.0, 0.051131133, 0.0, 0.0, 1.0, 0.73942363, 0.68535984, 0.38349462, 1.0]
+
+Best performing HANNS weights with performance0.48003143072128296:
+Specie ID:3, Age :4, Size :1
+[0.0, 8.109791E-4, 0.0, 0.0, 0.62648684, 0.0, 0.0, 0.0, 0.0, 1.0, 0.5603444, 0.5318035, 0.22993825, 1.0]
+
+Best performing HANNS weights with performance0.534695029258728:
+Specie ID:3, Age :5, Size :1
+[0.0, 0.16434911, 0.0, 0.0, 0.544918, 0.0, 0.0, 0.0, 0.0, 0.9254869, 0.0, 0.45023465, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5507070422172546:
+Specie ID:3, Age :6, Size :1
+[0.0, 0.15175839, 0.0, 0.0, 0.5391198, 0.0, 0.0, 0.0, 0.0, 0.9264811, 0.0, 0.45802125, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.59984290599823:
+Specie ID:3, Age :7, Size :1
+[0.0, 0.24815607, 0.0, 0.0, 0.628725, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.9366329, 0.18836509, 1.0]
+
+Best performing HANNS weights with performance0.6020282506942749:
+Specie ID:3, Age :8, Size :1
+[0.0, 0.24815607, 0.0, 0.0, 0.628725, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.9366329, 0.18836509, 1.0]
+
+Best performing HANNS weights with performance0.6149692535400391:
+Specie ID:3, Age :9, Size :1
+[0.0, 0.88607734, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.030533029, 1.0, 0.0, 0.99873513, 0.1456486, 1.0]
+
+Best performing HANNS weights with performance0.6091558337211609:
+Specie ID:3, Age :10, Size :1
+[0.0, 0.88406914, 0.0, 0.0, 0.99918467, 0.0, 0.0, 0.0, 0.04778761, 1.0, 0.0, 1.0, 0.16290317, 1.0]
+
+Best performing HANNS weights with performance0.6065990924835205:
+Specie ID:3, Age :11, Size :1
+[0.0, 0.88607734, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.030533029, 1.0, 0.0, 0.99873513, 0.1456486, 1.0]
+
+Best performing HANNS weights with performance0.6109555959701538:
+Specie ID:3, Age :12, Size :1
+[0.0, 0.88607734, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.030533029, 1.0, 0.0, 0.99873513, 0.1456486, 1.0]
+
+Best performing HANNS weights with performance0.6033281087875366:
+Specie ID:3, Age :13, Size :1
+[0.0, 0.88406914, 0.0, 0.0, 0.99918467, 0.0, 0.0, 0.0, 0.04778761, 1.0, 0.0, 1.0, 0.16290317, 1.0]
+
+Best performing HANNS weights with performance0.606384813785553:
+Specie ID:3, Age :14, Size :1
+[0.0, 0.88472086, 0.0, 0.0, 0.99983644, 0.0, 0.0, 0.0, 0.04218791, 1.0, 0.0, 1.0, 0.15730348, 1.0]
+
+Best performing HANNS weights with performance0.6255428791046143:
+Specie ID:3, Age :15, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6110571622848511:
+Specie ID:3, Age :16, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6066275835037231:
+Specie ID:3, Age :17, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6002856492996216:
+Specie ID:3, Age :18, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6170024275779724:
+Specie ID:3, Age :19, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6052706837654114:
+Specie ID:3, Age :20, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.5953863859176636:
+Specie ID:3, Age :21, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6012428402900696:
+Specie ID:3, Age :22, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6045428514480591:
+Specie ID:3, Age :23, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6041280031204224:
+Specie ID:3, Age :24, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6183831095695496:
+Specie ID:3, Age :25, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6110697984695435:
+Specie ID:3, Age :26, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6133980751037598:
+Specie ID:3, Age :27, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6152549386024475:
+Specie ID:3, Age :28, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6267247200012207:
+Specie ID:3, Age :29, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6230109930038452:
+Specie ID:3, Age :30, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.6122571229934692:
+Specie ID:3, Age :31, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.5885571241378784:
+Specie ID:3, Age :32, Size :1
+[0.0, 0.8752255, 0.0, 0.0, 0.99034107, 0.0, 0.0, 0.0, 0.038943972, 1.0, 0.0, 1.0, 0.15405954, 1.0]
+
+Best performing HANNS weights with performance0.5923011302947998:
+Specie ID:3, Age :33, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6079285740852356:
+Specie ID:3, Age :34, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6262533664703369:
+Specie ID:4, Age :33, Size :1
+[0.0, 0.88971454, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.10858865, 1.0, 0.0, 1.0, 0.22370422, 1.0]
+
+Best performing HANNS weights with performance0.6258962750434875:
+Specie ID:3, Age :36, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6073989272117615:
+Specie ID:3, Age :37, Size :2
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6170833110809326:
+Specie ID:4, Age :36, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6164690256118774:
+Specie ID:81, Age :4, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6080845594406128:
+Specie ID:4, Age :38, Size :1
+[0.0, 0.87674415, 0.0, 0.0, 0.99285007, 0.0, 0.0, 0.0, 0.022446798, 1.0, 0.0, 0.99090546, 0.13855276, 1.0]
+
+Best performing HANNS weights with performance0.6037137508392334:
+Specie ID:4, Age :39, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6062999963760376:
+Specie ID:81, Age :7, Size :1
+[0.0, 0.9418774, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0837306, 1.0, 0.0, 1.0, 0.19598705, 1.0]
+
+Best performing HANNS weights with performance0.6084273457527161:
+Specie ID:3, Age :43, Size :1
+[0.0, 0.75990516, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.9357817, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6002285480499268:
+Specie ID:4, Age :42, Size :1
+[0.0, 0.92549735, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.066370375, 1.0, 0.0, 1.0, 0.1776467, 1.0]
+
+Best performing HANNS weights with performance0.6143550872802734:
+Specie ID:81, Age :10, Size :1
+[0.0, 0.61616015, 0.0, 0.0, 0.90550643, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.20479226, 1.0]
+
+Best performing HANNS weights with performance0.6005285978317261:
+Specie ID:3, Age :46, Size :1
+[0.0, 0.9425314, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.08340443, 1.0, 0.0, 1.0, 0.19468075, 1.0]
+
+Best performing HANNS weights with performance0.6143979430198669:
+Specie ID:81, Age :12, Size :1
+[0.0, 0.8490085, 0.0, 0.0, 0.9548968, 0.0, 0.0, 0.0, 0.076806515, 1.0, 0.0, 1.0, 0.22086315, 1.0]
+
+Best performing HANNS weights with performance0.5984145402908325:
+Specie ID:81, Age :13, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6068419218063354:
+Specie ID:3, Age :49, Size :1
+[0.0, 0.94571584, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.10795482, 1.0, 0.0, 1.0, 0.22311632, 1.0]
+
+Best performing HANNS weights with performance0.6230571269989014:
+Specie ID:3, Age :50, Size :1
+[0.0, 0.94571584, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.10795482, 1.0, 0.0, 1.0, 0.22311632, 1.0]
+
+Best performing HANNS weights with performance0.6111270189285278:
+Specie ID:3, Age :51, Size :1
+[0.0, 0.9398551, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.08643533, 1.0, 0.0, 1.0, 0.20159684, 1.0]
+
+Best performing HANNS weights with performance0.6158714294433594:
+Specie ID:4, Age :50, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.28247285, 1.0, 0.0, 1.0, 0.16229317, 1.0]
+
+Best performing HANNS weights with performance0.6178973913192749:
+Specie ID:4, Age :51, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5994714498519897:
+Specie ID:3, Age :54, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.14219242, 1.0, 0.0, 1.0, 0.079785414, 1.0]
+
+Best performing HANNS weights with performance0.5995142459869385:
+Specie ID:3, Age :55, Size :1
+[0.0, 0.7272935, 0.0, 0.0, 0.842455, 0.0, 0.0, 0.0, 0.067203775, 0.9576165, 0.0, 1.0, 0.18236527, 1.0]
+
+Best performing HANNS weights with performance0.6000714302062988:
+Specie ID:3, Age :56, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6164690256118774:
+Specie ID:81, Age :22, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6238033771514893:
+Specie ID:83, Age :1, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6068847179412842:
+Specie ID:81, Age :24, Size :2
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.06335367, 0.0, 0.6323944, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6540714502334595:
+Specie ID:84, Age :1, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.020460462, 0.0, 0.4550928, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6223682165145874:
+Specie ID:81, Age :26, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6158308386802673:
+Specie ID:81, Age :27, Size :1
+[0.0, 0.4051567, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5950149893760681:
+Specie ID:81, Age :28, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6041994094848633:
+Specie ID:84, Age :5, Size :1
+[0.0, 0.8577176, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.062276136, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6100413799285889:
+Specie ID:81, Age :30, Size :1
+[0.0, 0.6933694, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.2504571, 1.0, 0.0, 1.0, 0.07626135, 1.0]
+
+Best performing HANNS weights with performance0.5796570777893066:
+Specie ID:81, Age :31, Size :1
+[0.0, 0.8545709, 0.0, 0.0, 0.88515145, 0.0, 0.0, 0.0, 0.0, 0.8079171, 0.0, 1.0, 0.0, 0.63901734]
+
+Best performing HANNS weights with performance0.590986967086792:
+Specie ID:81, Age :32, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6020568609237671:
+Specie ID:81, Age :33, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5924439430236816:
+Specie ID:81, Age :34, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.16043377, 1.0]
+
+Best performing HANNS weights with performance0.6199400424957275:
+Specie ID:81, Age :35, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6221824884414673:
+Specie ID:81, Age :36, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5993714332580566:
+Specie ID:81, Age :37, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6051278114318848:
+Specie ID:81, Age :38, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5796457529067993:
+Specie ID:81, Age :39, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6045993566513062:
+Specie ID:81, Age :40, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6272246837615967:
+Specie ID:81, Age :41, Size :1
+[0.18713646, 1.0, 0.0, 0.06131808, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6175403594970703:
+Specie ID:81, Age :42, Size :1
+[0.18713646, 1.0, 0.0, 0.06131808, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5984859466552734:
+Specie ID:85, Age :11, Size :1
+[0.0043356544, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.9532801, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6130267381668091:
+Specie ID:81, Age :44, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.96069115, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6092557907104492:
+Specie ID:81, Age :45, Size :1
+[0.32853973, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.9169497, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6132552623748779:
+Specie ID:85, Age :14, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.613183856010437:
+Specie ID:85, Age :15, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.9705199, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6259105801582336:
+Specie ID:85, Age :16, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.598014235496521:
+Specie ID:84, Age :24, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5943008065223694:
+Specie ID:84, Age :25, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5979859828948975:
+Specie ID:85, Age :19, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.022132328, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6060134172439575:
+Specie ID:85, Age :20, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.022132328, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6241285800933838:
+Specie ID:81, Age :53, Size :1
+[0.25762585, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.9798978, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6062562465667725:
+Specie ID:81, Age :54, Size :1
+[0.2615931, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5942294001579285:
+Specie ID:85, Age :23, Size :2
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6039142608642578:
+Specie ID:81, Age :56, Size :1
+[0.27039668, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5927295684814453:
+Specie ID:85, Age :25, Size :2
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.600657045841217:
+Specie ID:85, Age :26, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.618497371673584:
+Specie ID:81, Age :59, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6088701486587524:
+Specie ID:84, Age :35, Size :1
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6164262294769287:
+Specie ID:85, Age :29, Size :1
+[0.24515706, 0.95461315, 0.13497902, 0.0, 0.81599915, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6055706143379211:
+Specie ID:81, Age :62, Size :1
+[0.057039075, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.93361723, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.5944571495056152:
+Specie ID:85, Age :31, Size :2
+[0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0]
+
+Best performing HANNS weights with performance0.6003713607788086:
+Specie ID:81, Age :64, Size :1
+[0.057039075, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.93361723, 0.0, 1.0]
+

@@ -48,6 +48,8 @@ import com.ojcoleman.ahni.util.Parallel.Operation;
 import ctu.nengoros.comm.rosutils.RosUtils;
 import ctu.nengorosHeadless.network.connections.InterLayerWeights;
 import design.models.*;
+import design.models.logic.CrispXor;
+import design.models.logic.CrispXor.CrispXorSim;
 //import design.models.;
 /**
  * <p>
@@ -948,7 +950,7 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 	
 	
 	protected class EvaluatorHANNS extends Evaluator{
-		private QLambdaTestSim simulator;
+		private CrispXorSim simulator;
 		//private static final int SIMULATOR_STEPS = 7000;
 		private static final int REPETITIONS = 1;
 		private int stepsCount;
@@ -970,11 +972,11 @@ public abstract class BulkFitnessFunctionMT extends AHNIFitnessFunction implemen
 		protected void initSimulator(){
 			
 			
-			simulator = new QLambdaPaperSmaller();
+			simulator = new CrispXor.CrispXorSimBig();
 			simulator.defineNetwork();
 		}
 		
-		public QLambdaTestSim getSimulator(){
+		public CrispXorSim getSimulator(){
 			return simulator;
 		}
 		

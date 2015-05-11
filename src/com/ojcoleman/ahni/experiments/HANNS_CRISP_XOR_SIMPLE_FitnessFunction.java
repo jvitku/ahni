@@ -6,8 +6,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 
-import org.apache.log4j.Logger;
 import org.jgapcustomised.Chromosome;
 
 import ca.nengo.model.StructuralException;
@@ -16,19 +16,13 @@ import com.anji.integration.Activator;
 import com.ojcoleman.ahni.evaluation.BulkFitnessFunctionMT;
 import com.ojcoleman.ahni.evaluation.HyperNEATFitnessFunction;
 import com.ojcoleman.ahni.experiments.HANNS_experiments.HANNS_Experiments_Constants;
-import com.ojcoleman.ahni.experiments.objectrecognition.ObjectRecognitionFitnessFunction2;
 import com.ojcoleman.ahni.hyperneat.Properties;
 import com.ojcoleman.ahni.nn.GridNet;
-import com.ojcoleman.ahni.transcriber.HyperNEATTranscriber;
 
-import ctu.nengorosHeadless.network.connections.InterLayerWeights;
 import ctu.nengorosHeadless.network.connections.impl.IOGroup;
+import design.models.QLambdaTestSim;
 
-
-public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction {
-	//QLambdaEA a = new QLambdaEA();
-	
-	
+public class HANNS_CRISP_XOR_SIMPLE_FitnessFunction extends HyperNEATFitnessFunction{
 	private final static int DISTANCE_BETWEEN_IO_GROUPS = 0;
 	private String activatorLogFilePath;
 	
@@ -62,9 +56,8 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 	protected double evaluate(Chromosome genotype, Activator activator, int threadIndex) {
 		GridNet gridNet = (GridNet)activator;
 		EvaluatorHANNS evaluator = (EvaluatorHANNS)this.evaluators[threadIndex];
-//		evaluator.getSimulator().
-//		evaluator.evaluateGenomeInSimulator();
-		int LAYER_COUNT = 2;
+		
+		int LAYER_COUNT = gridNet.getWeights().length;
 		for (int n = 0; n < LAYER_COUNT; n++) {
 			ArrayList<IOGroup> inputs = evaluator.getSimulator().getInterLayerNo(n).getInputs();
 			ArrayList<IOGroup> outputs = evaluator.getSimulator().getInterLayerNo(n).getOutputs();
@@ -79,7 +72,8 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 					float[][] submatrix = new float[inNoUnits][outNoUnits];
 					for (int k = 0; k < submatrix.length; k++) {
 						for (int k2 = 0; k2 < submatrix[0].length; k2++) {
-							submatrix[k][k2] = (float)gridNet.getWeights()[0][0][inStartInd+k+i*DISTANCE_BETWEEN_IO_GROUPS][0][0][outStartInd+k2+j*DISTANCE_BETWEEN_IO_GROUPS];
+//							submatrix[k][k2] = (float)gridNet.getWeights()[n][i][k][0][j][k2];
+							submatrix[k][k2] = (float)gridNet.getWeights()[n][0][inStartInd+k][0][0][outStartInd+k2];
 	//						if((float)gridNet.getWeights()[0][0][inStartInd+k+i*DISTANCE_BETWEEN_IO_GROUPS][0][0][outStartInd+k2+j*DISTANCE_BETWEEN_IO_GROUPS] > 0.5){
 	//							submatrix[k][k2] = 1.0f;
 	//						}
@@ -89,7 +83,7 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 						}
 					}
 					try{
-						evaluator.getSimulator().getInterLayerNo(0).setWeightsBetween(i, j, submatrix);
+						evaluator.getSimulator().getInterLayerNo(n).setWeightsBetween(i, j, submatrix);
 					}
 					catch (StructuralException e) {
 						e.printStackTrace();
@@ -99,13 +93,38 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 				}
 			}
 		}
-		double fitnessVal = evaluator.evaluateGenomeInSimulator();
+		
+		
+		double fitnessVal = (double)evaluator.evaluateGenomeInSimulator();//(double)1000000;
+		if(fitnessVal < 0){
+			fitnessVal = 0;
+		}
 		genotype.setPerformanceValue(fitnessVal);
 		genotype.setFitnessValue(fitnessVal);
 		if(BulkFitnessFunctionMT.getBestPerformingActivatorPerformance() < fitnessVal){
-//			InterLayerWeights[] weights = new InterLayerWeights[1];
-//			weights[0] = evaluator.getSimulator().getInterLayerNo(0);
-//			BulkFitnessFunctionMT.setBestPerformingActivator(vector);
+			int vector_size = 0;
+			for (int i = 0; i < LAYER_COUNT; i++) {
+				ArrayList<IOGroup> inputs = evaluator.getSimulator().getInterLayerNo(i).getInputs();
+				int inputs_count = 0;
+				for (int j = 0; j < inputs.size(); j++) {
+					inputs_count += inputs.get(j).getNoUnits();
+				}
+				ArrayList<IOGroup> outputs = evaluator.getSimulator().getInterLayerNo(i).getOutputs();
+				int outputs_count = 0;
+				for (int j = 0; j < outputs.size(); j++) {
+					outputs_count += outputs.get(j).getNoUnits();
+				}
+				vector_size += inputs_count*outputs_count;
+			}
+			Float[] vector = new Float[vector_size];
+			int pos = 0;
+			for (int i = 0; i < LAYER_COUNT; i++) {
+				float[] other = evaluator.getSimulator().getInterLayerNo(i).getVector();
+				for (int j = 0; j < other.length; j++) {
+					vector[pos++] = other[j];
+				}
+			}
+			BulkFitnessFunctionMT.setBestPerformingActivator(vector);
 			BulkFitnessFunctionMT.setBestPerformingActivatorPerformance((float)fitnessVal);
 			if(genotype.getSpecie() != null){
 				BulkFitnessFunctionMT.setBestPerformingSpecie(genotype.getSpecie().getID(), genotype.getSpecie().getAge(), genotype.getSpecie().size());
@@ -120,15 +139,16 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 		}
 		try{
 			PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(activatorLogFilePath, true)));
-//			InterLayerWeights weights = getBestPerformingActivator()[0];
+//			InterLayerWeights weights = getBestPerformingActivator()[0
 //			setBestPerformingActivator(null);
-//			double perf = getBestPerformingActivatorPerformance();
-//			setBestPerformingActivatorPerformance(0.0f);
-//			
+			double perf = getBestPerformingActivatorPerformance();
+			setBestPerformingActivatorPerformance(0.0f);
+			
 //			ArrayList<IOGroup> inputs = weights.getInputs();
 //			ArrayList<IOGroup> outputs = weights.getOutputs();
-//			writer.println("Best performing HANNS weights with performance"+perf+":");
-//			writer.println(BulkFitnessFunctionMT.getBestPerformingSpecie());
+			writer.println("Best performing HANNS weights with performance"+perf+":");
+			writer.println(BulkFitnessFunctionMT.getBestPerformingSpecie());
+			writer.println(Arrays.toString(getBestPerformingActivator()));
 //			for (int i = 0; i < inputs.size(); i++) {
 //				for (int j = 0; j < outputs.size(); j++) {
 //					writer.println("Weights between input group "+i+" and output group "+j+" :");
@@ -155,6 +175,4 @@ public class QLambdaFitnessFunction2DistVector extends HyperNEATFitnessFunction 
 			System.err.println(e.getMessage()+e.getStackTrace());
 		}
 	}
-	
-	
 }
